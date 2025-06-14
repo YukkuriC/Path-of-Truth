@@ -7,4 +7,6 @@ StartupEvents.registry('item', (event) => {
     .attackDamageBaseline(37)
     .displayName('"Sword o\' Justice"')
     .rarity('epic')
+    
+  for (let disabled of ['create_factory_logistics:jar_packager', 'create_factory_logistics:fluid_mechanism', 'create_factory_logistics:incomplete_fluid_mechanism']) event.create(disabled)
 })
